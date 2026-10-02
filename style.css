@@ -278,3 +278,20 @@ footer {
   from { transform: translateX(0); }
   to   { transform: translateX(50%); }
 }
+/* ===== حقوق التصميم ===== */
+.credit {
+  font-size: 0.85rem;
+  margin-top: 6px;
+  opacity: 0.9;
+}
+
+.credit a {
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.3s;
+}
+
+.credit a:hover {
+  opacity: 0.7;
+}
