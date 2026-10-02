@@ -1,0 +1,191 @@
+/* ===== المتغيرات: الألوان في مكان واحد ===== */
+:root {
+  --gold: #d4a017;
+  --dark-gold: #a87b0b;
+  --brown: #3b2410;
+  --cream: #fff8e7;
+  --white: #ffffff;
+}
+
+/* ===== إعدادات عامة ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background: var(--cream);
+  color: var(--brown);
+  line-height: 1.8;
+}
+
+/* ===== الهيدر ===== */
+header {
+  background: var(--brown);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  color: var(--gold);
+  font-size: 1.6rem;
+}
+
+nav a {
+  color: var(--cream);
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+/* ===== القسم الرئيسي ===== */
+#hero {
+  background: linear-gradient(135deg, var(--gold), var(--dark-gold));
+  color: var(--white);
+  text-align: center;
+  padding: 90px 20px;
+}
+
+#hero h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+
+#hero p {
+  font-size: 1.3rem;
+  margin: 10px 0 30px;
+}
+
+#hero a {
+  background: var(--brown);
+  color: var(--gold);
+  padding: 12px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s;
+  display: inline-block;
+}
+
+#hero a:hover {
+  transform: scale(1.08);
+}
+
+/* ===== المنتجات ===== */
+#products {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+#products > h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--dark-gold);
+}
+
+.product {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 30px 20px;
+  text-align: center;
+  border-top: 5px solid var(--gold);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.product h3 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+/* ===== التواصل ===== */
+#contact {
+  background: var(--brown);
+  color: var(--cream);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#contact h2 {
+  color: var(--gold);
+  font-size: 2rem;
+}
+
+#contact p {
+  margin-bottom: 25px;
+}
+
+#contact a {
+  display: inline-block;
+  margin: 8px;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  background: #25d366;
+  color: var(--white);
+}
+
+#contact a[href^="tel"] {
+  background: var(--gold);
+  color: var(--brown);
+}
+
+/* ===== الفوتر ===== */
+footer {
+  background: #24150a;
+  color: var(--cream);
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+}
+/* ===== صور وأزرار المنتجات ===== */
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.order-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 26px;
+  background: #25d366;
+  color: var(--white);
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s;
+}
+
+.order-btn:hover {
+  transform: scale(1.06);
+}
